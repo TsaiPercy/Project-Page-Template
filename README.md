@@ -46,7 +46,7 @@ To edit the websites contents edit the `index.html` file. It contains different 
 - Results (comparison table + visualization placeholders)
 - Ablation Study (ablation table)
 - Conclusion (summary + Limitations + Future Work cards)
-- BibTeX citation
+- References
 
 ## Customization
 
@@ -66,6 +66,16 @@ The template includes meta tags for better search engine visibility and social m
 - Search engine optimization
 
 Create a 1200x630px social preview image at `static/images/social_preview.png`.
+
+### Placeholder Border Customization
+
+If you want to remove the dashed border and background from a placeholder figure container (e.g. when you replace it with an actual image but want to maintain center alignment and spacing), you can append the `plain-figure` class to the element. This class will also remove the default padding and min-height constraint to optimize the vertical spacing between elements:
+
+```html
+<div class="placeholder-figure plain-figure" id="problem-figure">
+  <img src="static/images/game_level.png" alt="Game Level">
+</div>
+```
 
 ## Tips
 

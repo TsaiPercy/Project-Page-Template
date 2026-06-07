@@ -785,6 +785,20 @@ a:focus {
   min-height: 280px;
 }
 
+/* Plain variant: removes border and background but maintains layout */
+.placeholder-figure.plain-figure {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0.5rem 0;
+  min-height: auto;
+}
+
+.placeholder-figure.plain-figure:hover {
+  background: transparent;
+  border-color: transparent;
+}
+
 /* Problem list */
 .problem-list {
   font-size: 1.05rem;
@@ -1088,4 +1102,26 @@ a:focus {
   .limitation-card {
     padding: 1.5rem;
   }
+}
+
+/* Reference List Styling */
+.reference-list {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  padding-left: 1.5rem;
+}
+
+.reference-list li {
+  margin-bottom: 0.75rem;
+}
+
+.reference-list a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.reference-list a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }

@@ -72,6 +72,8 @@ Project-Page-Template/
 ## 更新記錄
 
 - **2026-06-08**:
+  - 將 Poster 按鈕連結更換為指向本機端 PDF 的相對路徑（`static/pdfs/RL_Poster.pdf`）。
+  - 為作者謝侑哲與李佑軒新增個人網頁連結。
   - 填寫限制 (Limitations) 與未來工作 (Future Work) 卡片，分別填入 3 點正式的學術論述項目（包含無真人評估、受限於 MiniGrid 環境、Regret 依賴 Agent、結合真人玩測、擴充至 MiniHack/NetHack 與課程學習獎勵塑造）。
   - 填寫論文摘要 (Abstract)，替換原有的 Placeholder 內容。
   - 填寫結論區塊 (Conclusion)，使用條列式列表列出論文的三大主要發現（架構提案、拆解「好玩」指標、實驗驗證）。

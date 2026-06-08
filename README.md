@@ -32,6 +32,8 @@ To edit the websites contents edit the `index.html` file. It contains different 
 
 ## What's New
 
+- Redirected the Poster button link in index.html to local path `static/pdfs/RL_Poster.pdf`
+- Added personal website links for authors You-Zhe Xie and Yu-Hsuan Li
 - Populated the Limitations and Future Work sections with 3 detailed academic items each (covering human playtesting, complex environments, and agent biases)
 - Populated the Abstract section with the actual paper abstract text
 - Populated the Conclusion section with the 3 main findings (Framework Proposal, Decomposing "Fun", and Experimental Validation) in a clear list format

@@ -41,7 +41,7 @@ Project-Page-Template/
 | 順序 | Section ID | 標題 | 背景色 | 說明 |
 |------|-----------|------|--------|------|
 | 1 | hero | 標題 + 作者 + 連結按鈕 | 白 | 保留原始模板 |
-| 2 | teaser | Teaser | 白 | 雙欄展示 `final_strong.gif` 與 `final_strong2.gif` |
+| 2 | teaser | Teaser | 白 | 四欄展示 `final_strong.gif` 到 `final_strong4.gif`（附帶各自 Goto 任務的標籤） |
 | 3 | abstract | Abstract | 淺灰 `is-light` | 論文摘要 |
 | 4 | problem-motivation | Problem + Motivation | 白 | 雙欄 `columns`（採 `is-max-widescreen` 寬版容器，左 Problem 右 Motivation） |
 | 5 | methodology | Methodology | 淺灰 `is-light` | 子段落：How We Define Fun?（三卡片）+ SFT + Multi-Reward GRPO（method figure + 步驟 + reward cards） |

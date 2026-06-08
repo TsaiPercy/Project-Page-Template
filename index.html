@@ -113,16 +113,26 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="columns is-centered">
+      <div class="columns is-centered is-multiline">
         <!-- GIF 1 -->
-        <div class="column is-6 has-text-centered">
-          <img src="static/gif/final/final_strong.gif" alt="Agent Gameplay Demo 1" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 90%;">
-          <p class="subtitle is-6 mt-2" style="color: var(--text-secondary);">Gameplay Demo A</p>
+        <div class="column is-3 has-text-centered">
+          <img src="static/gif/final/final_strong.gif" alt="Agent Gameplay Demo 1" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 100%;">
+          <p class="subtitle is-6 mt-2" style="color: var(--text-secondary); font-weight: 600;">Target: Goto Blue Key</p>
         </div>
         <!-- GIF 2 -->
-        <div class="column is-6 has-text-centered">
-          <img src="static/gif/final/final_strong2.gif" alt="Agent Gameplay Demo 2" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 90%;">
-          <p class="subtitle is-6 mt-2" style="color: var(--text-secondary);">Gameplay Demo B</p>
+        <div class="column is-3 has-text-centered">
+          <img src="static/gif/final/final_strong2.gif" alt="Agent Gameplay Demo 2" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 100%;">
+          <p class="subtitle is-6 mt-2" style="color: var(--text-secondary); font-weight: 600;">Target: Goto Yellow Key (ID:1)</p>
+        </div>
+        <!-- GIF 3 -->
+        <div class="column is-3 has-text-centered">
+          <img src="static/gif/final/final_strong3.gif" alt="Agent Gameplay Demo 3" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 100%;">
+          <p class="subtitle is-6 mt-2" style="color: var(--text-secondary); font-weight: 600;">Target: Goto Yellow Key</p>
+        </div>
+        <!-- GIF 4 -->
+        <div class="column is-3 has-text-centered">
+          <img src="static/gif/final/final_strong4.gif" alt="Agent Gameplay Demo 4" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 100%;">
+          <p class="subtitle is-6 mt-2" style="color: var(--text-secondary); font-weight: 600;">Target: Goto Green Ball</p>
         </div>
       </div>
       <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
@@ -246,14 +256,14 @@
             <div class="method-step-number">1</div>
             <div class="method-step-content">
               <h4>Data Bootstrapping with SFT</h4>
-              <p>We bootstrap training data by using LLMs to generate initial game levels, then filter for valid and playable ones. These are used to fine-tune the base model via Supervised Fine-Tuning (SFT).</p>
+              <p>We use 11 maze-generation algorithms (random DFS, Prim's, recursive division, etc.) to construct a structurally diverse Supervised Fine-Tuning (SFT) dataset for Qwen, exposing the model to a broad range of spatial layouts and difficulty profiles.</p>
             </div>
           </div>
           <div class="method-step">
             <div class="method-step-number">2</div>
             <div class="method-step-content">
               <h4>Multi-Reward GRPO</h4>
-              <p>We design multiple reward signals that capture different aspects of "fun" — including regret-based skill discrimination, solution diversity, and object interaction richness — and optimize them jointly using Group Relative Policy Optimization (GRPO).</p>
+              <p>To capture "fun," we define three proxy rewards—skill discrimination, diversity, and interaction richness—and optimize them via Group Relative Policy Optimization (GRPO), which handles the inherent sparsity of these signals by comparing relative performance across sampled outputs.</p>
             </div>
           </div>
         </div>

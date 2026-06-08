@@ -32,6 +32,8 @@ To edit the websites contents edit the `index.html` file. It contains different 
 
 ## What's New
 
+- Updated the descriptions for SFT Data Bootstrapping and Multi-Reward GRPO stages with detailed explanations in the Methodology section
+- Teaser gameplay showcase updated to a 4-column layout with 4 GIFs and labels
 - Actual experimental results populated in both results and ablation study tables
 - Modern, clean design with better mobile support
 - Improved SEO with proper meta tags and structured data
